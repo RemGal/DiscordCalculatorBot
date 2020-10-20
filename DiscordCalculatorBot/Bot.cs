@@ -53,7 +53,7 @@ namespace DiscordCalculatorBot
             await Task.Delay(-1); //Fix for the program ending early issue
         }
 
-        private Task OnClientReady(ReadyEventArgs e) {
+        private Task OnClientReady(DiscordClient c, ReadyEventArgs e) {
             return Task.CompletedTask; //the bot is ON
         }
     }
